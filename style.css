@@ -22,9 +22,10 @@ body{
 
 .contenedor {
     height: calc(100vh - 136px);
-    margin: auto 40px auto auto;
+    margin: auto auto;
     display: flex;
     width: 90%;
+    padding: 1rem;
 }
 
 .izquierdo{
@@ -163,7 +164,7 @@ body{
     }
 
     .derecho{
-        margin: auto 0 1rem 0;
+        margin: auto 0;
         height: 100%;
         width: 100%; 
     }
@@ -185,11 +186,17 @@ body{
 
 
 @media  screen and (max-width:412px) {
-      
+   
     .entrada{
         font-size: 1.5rem;
         height: 20vh;
     }
+
+    .derecho{
+        height: 100%;
+        width: 100%; 
+    }
+
 
     .botones{
         display: grid;
