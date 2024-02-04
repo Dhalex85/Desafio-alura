@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Alura</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@400;700&display=swap"
+    rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="caja">
+            <h1 class="logo"><img src="img/Logo.png" alt="Se muestra logo"></h1>
+        </div>
+    </header>
+
+    <main>
+        <section class="contenedor">
+            
+            <div class="izquierdo">
+                <textarea id="entradaText" class="entrada" placeholder="Ingrese el texto aqui"></textarea>
+
+                <div class="abajo" >
+                    <div class="aviso">
+                        <img src="img/exclam.png" alt="Aviso">
+                        <label class="precaucion"> Solo se permiten minusculas sin acentos ni caracteres especiales</label>
+                    </div>
+                    <div class="botones">
+                        <button id="btnEncriptar" class="boton" onclick="encriptar();">Encriptar</button>
+                        <button id="btnDesencriptar" class="boton" onclick="desencriptar();">Desencriptar</button>
+                    </div>
+                </div>  
+            </div>   
+
+            <div id="ladoDerecho" class="derecho">
+                <img id="imgPersona" class="imgDerecha" src="img/persona.png">
+                <textarea id="textoDerecha"  class="textoFinal" placeholder="Ningun mensaje encontrado"></textarea>
+                <label id="etiqueta" class="etiquetaDerecha">Ingresa el texto que deseas encriptar o desencriptar</label>
+                <button id="btnCopy"  onclick="copiar();" class="botonOculto" style="display: none;">Copiar</button>  
+            </div>
+
+            
+        </section>    
+    </main> 
+    <script src="app.js"></script>
+</body>
+</html>

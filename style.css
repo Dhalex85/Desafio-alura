@@ -1,0 +1,201 @@
+*{
+    font-family: 'Inter', sans-serif;
+}
+
+button{
+    cursor: pointer;
+}
+
+body{
+    background-color: #e9ecf8;
+    font-family: 'Inter', sans-serif;
+}
+
+.caja{
+    height: 10%;
+    width: 90%;
+}
+
+.logo{
+    margin: 40px 0 0 40px;
+}
+
+.contenedor {
+    height: calc(100vh - 136px);
+    margin: auto 40px auto auto;
+    display: flex;
+    width: 90%;
+}
+
+.izquierdo{
+    margin-top: 1rem;
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.entrada{
+    margin-top: 3rem;
+    width: 80%;
+    height: 50%;
+    font-size: 2rem;
+    color: #0a3871;
+    background: #e9ecf8;
+    border: 0;
+    outline: none;
+    resize: none;
+
+}
+
+.entrada::placeholder{
+    font-weight: bold;
+    color: #0A3871;
+}
+.abajo{
+    display: grid;
+    margin-top: 3rem;
+}
+
+.precaucion{
+    margin-top: 2rem;
+    color: #646060;
+}
+
+.botones{
+    display: flex;
+    justify-content: center;
+}
+
+.boton{
+    width: 25%;
+	padding: 1rem;
+    height: 4rem;
+    margin-top: 2em;
+    margin-right: 2em;
+    font-size: 1rem;
+    border-radius: 30px;
+    border: 1px solid #0A3871;
+}
+
+#btnEncriptar{
+    color: white;
+    background-color: #0A3871;
+}
+
+#btnDesencriptar{
+    color: #0A3871;
+    background-color: #D8DFE8;
+}
+
+.derecho{
+    margin: -3rem 0 0 0;
+    padding: 2rem;
+    height: calc(100% + 3rem);
+    width: 40%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    background: white;
+    border-radius: 32px;
+    padding: 16px;
+    box-sizing: border-box; 
+}
+
+.imgDerecha{
+    width: 50%;
+}
+
+.textoFinal{
+    width: 100%;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #181818;
+    line-height: 120%;
+    border: none;
+    outline: none;
+    resize: none;
+}
+
+.etiquetaDerecha{
+    margin-top: 20px;
+    font-size: 1.2em;
+    width: 100%;
+    background: none;
+    text-align: center;   
+}
+
+.botonOculto{
+    width: 100%;
+    height: 15%;
+    font-size: 1rem;
+    border-radius: 30px;
+    border: 1px solid #0A3871;
+    background-color: transparent;
+}
+
+@media  screen and (max-width:768px) {
+        
+    .contenedor{
+        display: grid;
+        margin: auto;
+
+    }
+    .izquierdo{
+        width: 100%;
+    }
+
+    .entrada{
+        height: 25vh;
+    }
+    
+    .botones{
+        width: 100%;
+        margin-bottom: 1vh;
+    }
+
+    .boton{
+        width: 100%;
+    }
+
+    .derecho{
+        margin: auto;
+        height: 100%;
+        width: 100%; 
+    }
+
+    .imgDerecha{
+        width: 20%;
+    }
+    
+    
+    .botonOculto{
+        width: 35%;
+        height: 15%;
+        font-size: 1rem;
+        border-radius: 30px;
+        border: 1px solid #0A3871;
+        background-color: transparent;
+    }
+
+}
+
+
+@media  screen and (max-width:412px) {
+    #imgPersona{
+        display: none;
+    }
+      
+    .entrada{
+        font-size: 1.5rem;
+        height: 20vh;
+    }
+
+    .botones{
+        display: grid;
+    }
+}
